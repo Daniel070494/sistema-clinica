@@ -24,7 +24,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 		StringBuffer sql = new StringBuffer();
 		Usuario user = new Usuario();
 		
-		sql.append(" SELECT med_n, cedula_pro, concat(nombre, ' ', a_paterno, ' ', a_materno) as nombre FROM medicos ");
+		sql.append(" SELECT med_n, cedula_pro, genero, email concat(nombre, ' ', a_paterno, ' ', a_materno) as nombre FROM medicos ");
 		
 		try {
 		
